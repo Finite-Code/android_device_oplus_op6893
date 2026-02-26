@@ -213,9 +213,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor:64 \
     libcurl.vendor
 
-PRODUCT_PACKAGES += \
-    android.hardware.gnss-service.mediatek
-
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.safe_union@1.0.vendor \
