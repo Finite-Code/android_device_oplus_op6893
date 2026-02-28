@@ -59,7 +59,8 @@ PRODUCT_PACKAGES += \
     WifiOverlayCupida \
     WifiOverlayDenniz \
     LineageSDKOverlayDenniz \
-    KeyHandlerOverlay
+    KeyHandlerOverlay \
+    Sia # Add Sia Browser
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
