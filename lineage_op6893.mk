@@ -34,3 +34,9 @@ PRODUCT_MANUFACTURER := Oplus
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES := BuildDesc=$(call normalize-path-list, "sys_mssi_64_cn_armv82-user-13-TP1A.220905.001-1677828988354-release-keys")
 PRODUCT_GMS_CLIENTID_BASE := android-oplus
+
+# Button Indent: Side (0=L, 1=R), Y_Center_PX, Height_PX
+# VolUp (0,760,160), VolDown (0,920,160), Power (1,815,160)
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.sys.button_indent_coords=0,760,160;0,920,160;1,815,160 \
+    ro.feature.button_indent_enabled=true
