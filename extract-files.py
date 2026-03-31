@@ -99,7 +99,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.graphics.common-V2-ndk_platform.so', 'android.hardware.graphics.common-V2-ndk.so'),
     'vendor/lib64/libmtkisp_metadata.so': blob_fixup()
         .replace_needed('libui.so', 'libui_oplus.so'),
-    'vendor/lib64/libcam.utils.sensorprovider.so': blob_fixup()
+    ('vendor/lib64/libcam.utils.sensorprovider.so',
+    'vendor/bin/mnld'): blob_fixup()
         .replace_needed('libsensorndkbridge.so', 'libsensorndkbridge-v30.so'),
 }  # fmt: skip
 
