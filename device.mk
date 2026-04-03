@@ -163,7 +163,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.2-resources.vendor:64 \
     android.hardware.graphics.composer@2.3-service \
     android.hidl.allocator@1.0.vendor:64 \
-    android.hardware.memtrack-service.mediatek-mali \
+    android.hardware.memtrack-service.mediatek \
     android.hardware.graphics.common-V2-ndk.vendor \
     disable_configstore \
     vndservicemanager \
