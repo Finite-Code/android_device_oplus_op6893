@@ -211,6 +211,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.1.vendor:64 \
     android.hardware.gnss@2.0.vendor:64 \
     android.hardware.gnss@2.1.vendor:64 \
+    android.hardware.gnss-V1-ndk.vendor \
     libcurl.vendor
 
 # HIDL
