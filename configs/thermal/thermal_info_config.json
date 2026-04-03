@@ -3,7 +3,7 @@
         {
             "Name": "CPU",
             "Type": "CPU",
-            "ZoneName": "soc_max",
+            "ZoneName": "mtktscpu",
             "HotThreshold": [
                 "NaN",
                 "NaN",
@@ -19,7 +19,7 @@
         {
             "Name": "GPU",
             "Type": "GPU",
-            "ZoneName": "soc_max",
+            "ZoneName": "mtktscpu",
             "HotThreshold": [
                 "NaN",
                 "NaN",
@@ -33,7 +33,7 @@
             "Multiplier": 0.001
         },
         {
-            "Name": "battery",
+            "Name": "mtktsbattery",
             "Type": "BATTERY",
             "HotThreshold": [
                 "NaN",
@@ -48,7 +48,7 @@
             "Multiplier": 0.001
         },
         {
-            "Name": "ap_ntc",
+            "Name": "mtktsAP",
             "Type": "SKIN",
             "HotThreshold": [
                 "NaN",
@@ -63,22 +63,7 @@
             "Multiplier": 0.001
         },
         {
-            "Name": "ltepa_ntc",
-            "Type": "POWER_AMPLIFIER",
-            "HotThreshold": [
-                "NaN",
-                "NaN",
-                "NaN",
-                68.0,
-                90.0,
-                100.0,
-                110.0
-            ],
-            "VrThreshold": "68.0",
-            "Multiplier": 0.001
-        },
-        {
-            "Name": "nrpa_ntc",
+            "Name": "mtktsbtsmdpa",
             "Type": "POWER_AMPLIFIER",
             "HotThreshold": [
                 "NaN",
@@ -95,7 +80,7 @@
         {
             "Name": "NPU",
             "Type": "NPU",
-            "ZoneName": "soc_max",
+            "ZoneName": "mtktscpu",
             "HotThreshold": [
                 "NaN",
                 "NaN",
@@ -111,23 +96,23 @@
     ],
     "CoolingDevices": [
         {
-            "Name": "mutt-pa1",
+            "Name": "mtk-cl-mutt01",
             "Type": "MODEM"
         },
         {
-            "Name": "mutt-pa2",
+            "Name": "mtk-cl-mutt02",
             "Type": "MODEM"
         },
         {
-            "Name": "tx-pwr-pa1",
+            "Name": "mtk-cl-tx-pwr01-nr",
             "Type": "MODEM"
         },
         {
-            "Name": "tx-pwr-pa2",
+            "Name": "mtk-cl-tx-pwr02-nr",
             "Type": "MODEM"
         },
         {
-            "Name": "scg-off-pa2",
+            "Name": "mtk-cl-scg-off",
             "Type": "MODEM"
         }
     ]
