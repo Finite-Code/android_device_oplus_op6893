@@ -416,6 +416,8 @@ on post-fs-data
     chown system system /sys/kernel/oplus_display/esd
     chmod 0666 /sys/kernel/oplus_display/esd
     chmod 0666 /dev/oplus_display
+    chown system system /sys/kernel/oplus_display/fp_state
+    chown 0666 /sys/kernel/oplus_display/fp_state
 
     # Input
     chown system /sys/class/input/input1/enable
