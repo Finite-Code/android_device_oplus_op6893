@@ -64,6 +64,9 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libssl.so', 'libssl-v32.so'),
     'vendor/lib64/libmtkcam_featurepolicy.so': blob_fixup()
         .sig_replace('34 E8 87 40 B9', '34 28 02 80 52'),
+    'vendor/lib64/libsensor_custom.so': blob_fixup()
+        .binary_regex_replace(b'android.sensor.wise_light', b'android.sensor.light\x00')
+        .sig_replace('F1 E9 D3 84 52 49 3F A0 72', 'F1 A9 00 80 52 09 00 A0 72'),
     'vendor/bin/hw/android.hardware.wifi@1.0-service-lazy': blob_fixup()
         .replace_needed('libwifi-hal.so', 'libwifi-hal-mtk.so'),
     'system/lib64/libem_support_jni.so': blob_fixup()
